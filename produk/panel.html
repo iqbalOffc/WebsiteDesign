@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan Produk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            background-size: cover;
+            background-position: center;
+            background-attachment : fixed;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.9);
+        }
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+            transition: transform 0.2s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-info h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .product-info p {
+            color: #777;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #e76f51;
+            margin: 10px 0;
+        }
+        .checkout-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2a9d8f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+        .checkout-button:hover {
+            background: #21867a;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Produk Kami</h1>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('https://b.top4top.io/p_32262t8sm1.jpg');"></div>
+            <div class="product-info">
+                <h2>Nama Produk</h2>
+                <p>Deskripsi singkat tentang produk ini.</p>
+                <div class="price">Rp. 100.000</div>
+                <a href="checkout.html" class="checkout-button">Beli Sekarang</a>
+            </div>
+        </div>
+        <!-- Tambahkan produk lain di sini -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('https://b.top4top.io/p_32262t8sm1.jpg');"></div>
+            <div class="product-info">
+                <h2>Nama Produk 2</h2>
+                <p>Deskripsi singkat tentang produk ini.</p>
+                <div class="price">Rp. 200.000</div>
+                <a href="checkout.html" class="checkout-button">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
